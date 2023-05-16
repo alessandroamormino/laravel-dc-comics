@@ -1,0 +1,284 @@
+@import '~bootstrap/scss/bootstrap';
+
+// banner
+.banner{
+  background-color: #0482F9;
+  .container{
+    display: flex;
+    justify-content: flex-end;
+    gap: 4em;
+    color: #fff;
+    font-size: .8em;
+
+    padding: .3em 0;
+  }
+}
+
+// header
+header{
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // flex
+    .nav-left{
+      img{
+        width: 90%;
+      }
+    }
+    .nav-center{
+      ul{
+        display: flex;
+        gap: 3em;
+        // flex
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li{
+          padding: 50px 0;
+          a{
+            position: relative;
+
+            color: #000;
+            text-decoration: none;
+            text-transform: uppercase;
+            
+            padding: 53px 0;
+
+            &:hover{
+              color: #0482F9;
+              &::after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background-color: #0482F9;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .jumbo{
+    background-image: url('../images/jumbotron.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+  }
+}
+
+// main
+main.home{
+  background-color: #1C1C1C;
+  
+  color: #fff;
+  .container{
+    position: relative;
+    // position
+    padding: 4em 0;
+    .tag{
+      position: absolute;
+      top: -1.5em;
+      left: -15px;
+      // position
+      display: inline-block;
+      padding: .5em 2em;
+
+      text-transform: uppercase;
+      background-color: #0482F9;
+      h3{
+        margin: 0;
+      }
+    }
+    .comics-card{
+      .comics-card-inner{
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1em;
+        // flex
+        padding-bottom: 3em;
+        img{
+          width: 100%;
+          aspect-ratio: 1/1;
+          object-fit: cover;
+          object-position: top;
+        }
+        .title{
+          text-transform: uppercase;
+          font-size: .9em;
+        }
+      }
+    }
+    .button-section{
+      display: flex;
+      justify-content: center;
+      button{
+        padding: .5em 4em;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .icons-container{
+    position: relative;
+    z-index: 1;
+    // position
+    background-color: #0482F9;
+    padding: 3em 0;
+    .icons{
+      display: flex;
+      justify-content: center;
+      gap: 4em;
+      img{
+        height: 50px;
+      }
+      .icon{
+        text-transform: uppercase;
+        &:nth-child(5){
+          img{
+            width: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+main.comics{
+  .separator{
+    background-color: #0482F9;
+    height: 80px;
+  }
+  .container{
+    position: relative;
+    // position
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    .thumb{
+      position: absolute;
+      top: -350px;
+      left: 0;
+  
+      img{
+        height: 300px;
+      }
+    }
+    .left{
+      .price{
+        display: flex;
+        justify-content: space-between;
+        // flex
+        width: 300px;
+        background-color: #56BA59;
+        border-radius: 10px;
+        padding: .5em 2em;
+      }
+      .paragraph{
+        padding: 2em 0;
+      }
+    }
+    .right{
+      img{
+        width: 200px;
+      }
+    }
+  }
+}
+
+// footer
+footer{
+  background-image: url('../images/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+  .container{
+    padding: 2em 0;
+    .footer-flex {
+      display: flex;
+      justify-content: space-between;
+  
+      position: relative;
+    }
+  
+    .list-container {
+      display: flex;
+      gap: 2em;
+  
+      flex-grow: 1;
+    }
+  
+    .list-column {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+  
+    .list {
+      color: #fff;
+  
+      h2 {
+          margin: .5em 0;
+          text-transform: uppercase;
+      }
+  
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+    }
+  
+    a {
+      color: grey;
+      text-decoration: none;
+      text-transform: capitalize;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: .9em;
+      &:hover{
+        color: #fff;
+      }
+    }
+  
+    .logo-bg {
+      position: absolute;
+      right: 0;
+      top: -40%;
+      z-index: 0;
+    }
+  
+    .copy{
+      color: grey;
+      font-size: .9em;
+      a{
+        color: #0482F9; 
+      }
+    }
+
+  }
+
+
+  .footer-banner{
+    background-color: #303030;
+    padding: 1em 0;
+    .container{
+      display: flex;
+      justify-content: space-between;
+      // flex
+      .left{
+        button{
+          color: white;
+        }
+      }
+      .right{
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        h5 {
+          color: #0482F9;
+        }
+      }
+    }
+  }
+}
