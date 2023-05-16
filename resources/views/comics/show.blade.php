@@ -28,5 +28,37 @@
         <img src="{{Vite::asset('resources/images/advertisement.jpg')}}" alt="asd">
       </div>
     </div>
+
+    <div class="container more-info">
+      <div class="talent">
+        <h3>Talent</h3>
+        <hr>
+        <div class="_row artists">
+          <div class="left">Art by:</div>
+          <div class="right">{{$comic->artists}}</div>
+        </div>
+        <div class="_row writers">
+          <div class="left">Written by:</div>
+          <div class="right">{{$comic->writers}}</div>
+        </div>
+      </div>
+      <div class="specs">
+        <h3>Specs</h3>
+        <hr>
+        <div class="_row series">
+          <div class="left">Series:</div>
+          <div class="right">{{$comic->series}}</div>
+        </div>
+        <div class="_row price">
+          <div class="left">U.S. Price:</div>
+          <div class="right">{{$comic->price}}</div>
+        </div>
+        <div class="_row sale">
+          <div class="left">On Sale Date:</div>
+          <div class="right">{{$comic->sale_date}}</div>
+        </div>
+      </div>
+    </div>
+
   </main>
 @endsection
