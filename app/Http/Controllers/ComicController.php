@@ -44,7 +44,14 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $formData = $request->all();
+
+        $newComic = new Comic();
+
+        $newComic->fill($formData);
+        $newComic->save();
+
+        return redirect()->route('comics.show', $newComic->id);
     }
 
     /**

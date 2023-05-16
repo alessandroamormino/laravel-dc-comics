@@ -13,6 +13,9 @@
         </a>
       @endforeach
     </div>
+    <button class="btn btn-primary rounded-0">
+      <a href="{{route('comics.create')}}">Add Comic</a>
+    </button>
   </div>
 </main>
 

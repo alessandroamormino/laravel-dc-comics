@@ -225,6 +225,32 @@ main.comics{
   }
 }
 
+main.create{
+  .container{
+    display: flex;
+    justify-content: center;
+    form{
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: space-between;
+      // flex
+      width: 600px;
+      ._row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2em;
+        input{
+          width: 250px;
+        }
+        textarea{
+          width: 250px;
+        }
+      }
+    }
+  }
+}
+
 // footer
 footer{
   background-image: url('../images/footer-bg.jpg');
