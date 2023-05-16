@@ -26,7 +26,7 @@
         @endforeach
       </div>
       <div class="logo-bg">
-        {{-- <img src="{{Vite::asset('resources/images/dc-logo-bg.png')}}" alt="dc-logo"> --}}
+        <img src="{{Vite::asset('resources/images/dc-logo-bg.png')}}" alt="dc-logo">
       </div>
     </div>
     <div class="copy">
