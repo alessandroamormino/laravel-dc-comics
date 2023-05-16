@@ -24,7 +24,6 @@
         </div>
       </div>
       <div class="right">
-        <span>IMAGE</span>
         <img src="{{Vite::asset('resources/images/advertisement.jpg')}}" alt="asd">
       </div>
     </div>

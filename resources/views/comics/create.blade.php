@@ -41,7 +41,9 @@
         <input type="text" id="type" name="type">
       </div>
   
-      <button class="btn btn-primary rounded-0" type="submit">Add Comic!</button>
+      <div class="button-section mt-5">
+        <button class="btn btn-primary rounded-0" type="submit">Add Comic!</button>
+      </div>
     </form>
   </div>
 </main>
