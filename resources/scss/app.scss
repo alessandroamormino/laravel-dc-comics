@@ -118,6 +118,10 @@ main.home{
       button{
         padding: .5em 4em;
         text-transform: uppercase;
+        a{
+          color: white;
+          text-decoration: none;
+        }
       }
     }
   }
