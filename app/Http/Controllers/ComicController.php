@@ -15,11 +15,8 @@ class ComicController extends Controller
     public function index()
     {
         $comics = Comic::all();
-
         $links = config('links');
-
         $lists = config('lists');
-
         $buy = config('buy');
 
         return view('comics/index', compact('comics', 'links', 'lists', 'buy'));
@@ -54,7 +51,11 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        //
+        $links = config('links');
+        $lists = config('lists');
+        $buy = config('buy');
+
+        return view('comics/show', compact('comic', 'links', 'lists', 'buy'));
     }
 
     /**

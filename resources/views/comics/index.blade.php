@@ -5,12 +5,12 @@
   <div class="container">
     <div class="row">
       @foreach($comics as $item)
-        <div class="col-2 comics-card">
+        <a href="{{route('comics.show', $item->id)}}" class="col-2 comics-card">
           <div class="comics-card-inner">
             <img src="{{$item->thumb}}" alt="{{$item->title}}">
             <span class='title'>{{$item['series']}}</span>
           </div>
-        </div>
+        </a>
       @endforeach
     </div>
   </div>
