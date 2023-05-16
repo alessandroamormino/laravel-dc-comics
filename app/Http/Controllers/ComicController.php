@@ -29,7 +29,11 @@ class ComicController extends Controller
      */
     public function create()
     {
-        //
+        $links = config('links');
+        $lists = config('lists');
+        $buy = config('buy');
+
+        return view('comics/create', compact('links', 'lists', 'buy'));
     }
 
     /**
