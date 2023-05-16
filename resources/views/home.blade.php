@@ -8,18 +8,6 @@
       <div class="tag">
         <h3>Current Series</h3>
       </div>
-      <div class="row">
-
-        {{-- @foreach($comics as $item)
-          <div class="col-2 comics-card">
-            <div class="comics-card-inner">
-              <img src="{{$item['thumb']}}" alt="{{$item['title']}}">
-              <span class='title'>{{$item['series']}}</span>
-            </div>
-          </div>
-        @endforeach --}}
-
-      </div>
       <div class="button-section">
         <button class="btn btn-primary rounded-0">
             <a href="{{route('comics.index')}}">Load comics</a>
