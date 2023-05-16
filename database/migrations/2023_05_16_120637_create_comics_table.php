@@ -22,7 +22,7 @@ return new class extends Migration
             $table->text('thumb');
             $table->string('price', 7);
             $table->string('series', 50);
-            $table->date('sales_date');
+            $table->date('sale_date');
             $table->string('type', 50);
 
             $table->timestamps();
