@@ -1,5 +1,5 @@
 {{-- estendo il main layout --}}
-@extends('layout/main')
+@extends('layouts/main')
 
 {{-- content --}}
 @section('content')
