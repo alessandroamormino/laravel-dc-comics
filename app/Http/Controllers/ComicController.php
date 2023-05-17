@@ -99,6 +99,10 @@ class ComicController extends Controller
      */
     public function destroy(Comic $comic)
     {
-        //
+        // cancello il comic selezionato
+        $comic->delete();
+
+        // faccio il redirect alla pagine dei fumetti
+        return redirect()->route('comics.index');
     }
 }

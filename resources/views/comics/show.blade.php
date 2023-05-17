@@ -63,6 +63,40 @@
         {{-- Aggiungo un bottone per modificare il comic --}}
         <button class="btn btn-primary rounded-0"><a href="{{route('comics.edit', $comic->id)}}">Update Comic</a></button>
       </div>
+      <div class="delete-section">
+        {{-- <!-- Button trigger modal -->
+        <button type="button" class="btn btn-danger rounded-0" data-bs-toggle="modal" data-bs-target="#deleteComic">
+          Delete Comic
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="deleteComic" tabindex="-1" aria-labelledby="deleteComicLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Comic</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Are you sure you want to delete this comic?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div> --}}
+
+        <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+          @csrf
+          @method('DELETE')
+
+          <button type="submit" class="btn btn-danger rounded-0">Delete Comic</button>
+        </form>
+
+
+      </div>
     </div>
   </main>
 @endsection
