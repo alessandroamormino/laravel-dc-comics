@@ -66,7 +66,7 @@ class ComicController extends Controller
      */
     public function edit(Comic $comic)
     {
-        return view('comics/edit', compact($comic));
+        return view('comics/edit', compact('comic'));
     }
 
     /**
@@ -88,7 +88,7 @@ class ComicController extends Controller
         $comic->save();
 
         // faccio il redirect alla pagina show relativa al comic che ho modificato
-        return redirect()->route('comic.show', $comic->id);
+        return redirect()->route('comics.show', $comic->id);
     }
 
     /**

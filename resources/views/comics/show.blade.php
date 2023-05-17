@@ -58,5 +58,11 @@
         </div>
       </div>
     </div>
+    <div class="container">
+      <div class="update-section">
+        {{-- Aggiungo un bottone per modificare il comic --}}
+        <button class="btn btn-primary rounded-0"><a href="{{route('comics.edit', $comic->id)}}">Update Comic</a></button>
+      </div>
+    </div>
   </main>
 @endsection

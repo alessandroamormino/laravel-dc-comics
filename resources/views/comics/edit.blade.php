@@ -45,7 +45,7 @@
       </div>
   
       <div class="button-section mt-5">
-        <button class="btn btn-primary rounded-0" type="submit">Add Comic!</button>
+        <button class="btn btn-primary rounded-0" type="submit">Save Comic!</button>
       </div>
     </form>
   </div>
