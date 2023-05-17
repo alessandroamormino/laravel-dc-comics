@@ -78,7 +78,17 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-        //
+        // memorizzo i dati presi dal form nella pagina edit
+        $formData = $request->all();
+
+        // aggiorno i dati del record selezionato con i dati aggiornati
+        $comic->update($formData);
+
+        // salvo il record aggiornato
+        $comic->save();
+
+        // faccio il redirect alla pagina show relativa al comic che ho modificato
+        return redirect()->route('comic.show', $comic->id);
     }
 
     /**
