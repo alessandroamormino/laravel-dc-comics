@@ -64,7 +64,7 @@
         <button class="btn btn-primary rounded-0"><a href="{{route('comics.edit', $comic->id)}}">Update Comic</a></button>
       </div>
       <div class="delete-section">
-        {{-- <!-- Button trigger modal -->
+        <!-- Button trigger modal -->
         <button type="button" class="btn btn-danger rounded-0" data-bs-toggle="modal" data-bs-target="#deleteComic">
           Delete Comic
         </button>
@@ -82,18 +82,19 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Delete</button>
+                <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+                  @csrf
+                  @method('DELETE')
+        
+                  <button type="submit" class="btn btn-danger">Delete Comic</button>
+                </form>
               </div>
             </div>
           </div>
-        </div> --}}
+        </div>
 
-        <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
-          @csrf
-          @method('DELETE')
 
-          <button type="submit" class="btn btn-danger rounded-0">Delete Comic</button>
-        </form>
+        
 
 
       </div>
