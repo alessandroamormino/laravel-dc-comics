@@ -82,6 +82,9 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
+        // richiamo la funzione per validare i dati prima di inviarli al db
+        $this->validation($request);
+
         // memorizzo i dati presi dal form nella pagina edit
         $formData = $request->all();
 
